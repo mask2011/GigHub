@@ -1,0 +1,266 @@
+﻿@color_1: white;
+@color_2: #333;
+@font_family_1: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@background_color_1: #10142214;
+@background_color_2: #095b48;
+@background_color_3: #094839;
+@background_color_4: #3489a2;
+@border_color_1: #095b48;
+@border_color_2: #66afe9;
+
+/* Set padding to keep content from hitting the edges */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/* Set width on the form input elements since they're 100% wide by default */
+/*Bootstrap Overrides*/
+/*Page-Level Styles*/
+body {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: @font_family_1;
+    background-color: @background_color_1;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal {
+    dt {
+        white-space: normal;
+    }
+}
+
+input {
+    max-width: 280px;
+}
+
+select {
+    max-width: 280px;
+}
+
+textarea {
+    max-width: 280px;
+}
+
+.verticalmargin {
+    margin-top: 10px;
+}
+
+.verticalmargin2 {
+    margin-top: 50px;
+}
+
+.verticalmargin3 {
+    margin-top: 100px;
+}
+
+h1 {
+    font-family: @font_family_1;
+}
+
+h2 {
+    font-family: @font_family_1;
+}
+
+h3 {
+    font-family: @font_family_1;
+}
+
+h4 {
+    font-family: @font_family_1;
+}
+
+h5 {
+    font-family: @font_family_1;
+}
+
+h6 {
+    font-family: @font_family_1;
+}
+
+.h1 {
+    font-family: @font_family_1;
+}
+
+.h2 {
+    font-family: @font_family_1;
+}
+
+.h3 {
+    font-family: @font_family_1;
+}
+
+.h4 {
+    font-family: @font_family_1;
+}
+
+.h5 {
+    font-family: @font_family_1;
+}
+
+.h6 {
+    font-family: @font_family_1;
+}
+
+.navbar-inverse {
+    background-color: @background_color_2;
+    border-color: @border_color_1;
+
+    .notifications {
+        position: relative;
+
+        .badge {
+            position: absolute;
+            top: 8px;
+            right: -6px;
+            background: #a80a0a;
+        }
+    }
+
+    .navbar-nav {
+        > .open {
+            > a {
+                background-color: @background_color_3;
+                background-color: @background_color_3;
+
+                &:hover {
+                    background-color: @background_color_3;
+                }
+
+                &:focus {
+                    background-color: @background_color_3;
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.dropdown-menu {
+    width: 100%;
+    min-width: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    font-size: 17px;
+    padding: 8px 15px;
+    border-radius: 9px;
+    height: 44px;
+
+    &:focus {
+        border-color: @border_color_2;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 9px;
+    }
+}
+
+.btn {
+    border-radius: 9px;
+}
+
+.btn-info {
+    background-color: @background_color_4;
+}
+
+.gigs {
+    list-style: none;
+    width: 300px;
+
+    > li {
+        position: relative;
+        margin-bottom: 30px;
+
+        .date {
+            background: red;
+            color: @color_1;
+            text-align: center;
+            width: 60px;
+            border-radius: 8px;
+
+            .month {
+                text-transform: uppercase;
+                font-size: 17px;
+                font-weight: bold;
+                padding: 2px 6px;
+            }
+
+            .day {
+                background: #f7f7f7;
+                color: @color_2;
+                font-size: 17px;
+                padding: 6px 12px;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+            }
+        }
+
+        .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+
+            .artist {
+                font-weight: 700;
+                display: block;
+            }
+
+            .genre {
+                font-size: 15px;
+            }
+        }
+
+        .actions {
+            font-size: 15px;
+            display: none;
+        }
+
+        &:hover {
+            .actions {
+                display: block;
+            }
+        }
+    }
+}
+
+.popover-notifications {
+    .popover-content {
+        padding: 2px;
+    }
+
+    ul.notifications {
+        list-style: none;
+        padding-left: 0;
+
+        > li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+    }
+}
+
+#searchGigs {
+    width: 400px;
+    input {
+        max-width: none;
+    }
+}

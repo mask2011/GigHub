@@ -1,0 +1,18 @@
+﻿@model IEnumerable<GigHubChMask2011.Core.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "Who I Follow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Who I Follow</h2>
+
+<ul>
+    @foreach (var artist in Model)
+    {
+        <li>
+            @artist.Name
+        </li>
+    }
+</ul>
+
